@@ -84,8 +84,7 @@ mrproper:
 				echo ""							;\
 			done								\
 		) > Kconfig.kernel							;\
-		kver=$$($(MAKE) --no-print-directory -C $(KLIB_BUILD) kernelversion |	\
-			sed 's/^\(\([3-4]\|2\.6\)\.[0-9]\+\).*/\1/;t;d')		;\
+		kver=4.1.15								;\
 		test "$$kver" != "" || echo "Kernel version parse failed!"		;\
 		test "$$kver" != ""							;\
 		kvers="$$(seq 14 39 | sed 's/^/2.6./')"					;\
