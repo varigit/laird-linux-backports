@@ -346,6 +346,8 @@ static int __init brcmfmac_module_init(void)
 {
 	int err;
 
+	brcmf_err("Laird backports driver 3.5.5.18+\n");
+
 	/* Initialize debug system first */
 	brcmf_debugfs_init();
 
